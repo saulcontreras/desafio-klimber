@@ -142,7 +142,7 @@
     <value>¡Lista vacía de formas!</value>
   </data>
   <data name="Formas" xml:space="preserve">
-    <value>formas</value>
+    <value>Formas</value>
   </data>
   <data name="Cuadrados" xml:space="preserve">
     <value>Cuadrados</value>
@@ -154,6 +154,18 @@
     <value>Triángulos</value>
   </data>
   <data name="Forma" xml:space="preserve">
-    <value>forma</value>
+    <value>Forma</value>
+  </data>
+  <data name="Rectangulo" xml:space="preserve">
+    <value>Rectángulo</value>
+  </data>
+  <data name="Rectangulos" xml:space="preserve">
+    <value>Rectángulos</value>
+  </data>
+  <data name="Trapecio" xml:space="preserve">
+    <value>Trapecio</value>
+  </data>
+  <data name="Trapecios" xml:space="preserve">
+    <value>Trapecios</value>
   </data>
 </root>
