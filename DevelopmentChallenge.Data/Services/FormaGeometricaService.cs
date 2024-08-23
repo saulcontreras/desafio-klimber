@@ -1,5 +1,6 @@
 ﻿using DevelopmentChallenge.Data.Classes;
 using DevelopmentChallenge.Data.Enums;
+using Microsoft.SqlServer.Server;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -35,7 +36,7 @@ namespace DevelopmentChallenge.Data.Services
             var totalFormas = formas.Count;
             var totalArea = formas.Sum(f => f.CalcularArea());
             var totalPerimetro = formas.Sum(f => f.CalcularPerimetro());
-            reporte += $"{resourceManager.GetString("Total", culture)}<br/>{totalFormas} {resourceManager.GetString("Formas", culture)} {resourceManager.GetString("Perimetro", culture)} {totalPerimetro:#.##} {resourceManager.GetString("Area", culture)} {totalArea:#.##}";
+            reporte += $"{resourceManager.GetString("Total", culture)}<br/>{totalFormas} {(totalFormas > 1 ? resourceManager.GetString("Formas", culture) : resourceManager.GetString("Forma", culture))} {resourceManager.GetString("Perimetro", culture)} {totalPerimetro:#.##} {resourceManager.GetString("Area", culture)} {totalArea:#.##}";
 
             return reporte;
         }

@@ -153,4 +153,7 @@
   <data name="Triangulos" xml:space="preserve">
     <value>Triángulos</value>
   </data>
+  <data name="Forma" xml:space="preserve">
+    <value>forma</value>
+  </data>
 </root>
